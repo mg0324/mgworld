@@ -1,0 +1,69 @@
+/**
+ * mg layout main css
+ */
+*{padding: 0;margin: 0;font-size: 16px;line-height: 20px;font-family: arial;}
+a, a:visited{color:#337ab7;text-decoration: none;}
+/**layout**/
+/*width ,height set in layout.js*/
+#mg_left{
+	border-right: 1px solid #ddd;
+	box-shadow: 10px 0px 5px #888888;
+	position: absolute;
+}
+#mg_main{
+	padding:0px;
+	margin:0px;
+	padding-left: 20px;
+	padding-top: 10px;
+	overflow:auto;
+}
+/*项目条*/
+#mg_title_line{
+	width:100%;
+	height: 50px;
+	line-height: 50px;
+	/* background-color: #ddd; */
+	padding:0px;
+}
+/**
+ * logo
+ */
+#mg_title_line .logo{
+	padding-left: 5px;
+}
+#mg_title_line .logo img{
+	width:45px;
+	height: 45px;
+}
+/**
+ * 名称
+ */
+#mg_title_line .title{
+	padding-left: 4px;
+	text-align: center;
+}
+#mg_title_line .title tf{
+	font-size: 15px;
+}
+#mg_title_line .title ts{
+	font-size: 10px;
+}
+.mg_time{
+	width:100%;
+	font-size: 12px;
+	color: gray;
+}
+#mg_left_bottom{
+	width: 100%;
+	height: 20px;
+}
+.mg_copyright{
+	width:15px;
+	text-align: center;
+	font-size: 15px;
+	color: red;
+	position: relative;
+	top: 20px;
+	display: none;
+	left:3px;
+}

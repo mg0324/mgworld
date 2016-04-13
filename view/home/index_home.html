@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+	<title>梦往专属世界</title>
+	<link rel="stylesheet" href="/static/css/common.css"/>
+	<!-- jquery -->
+	<script src="/static/js/jquery-1.11.1.min.js" type="text/javascript"></script>
+	<!-- bt -->
+	<link rel="stylesheet" href="/static/js/bootstrap/css/bootstrap.css"/>
+	<script src="/static/js/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+	<!-- mglayout -->
+	<link rel="stylesheet" href="/static/js/mglayout/layout.css"/>
+	<script src="/static/js/mglayout/layout.js" type="text/javascript"></script>
+	<!-- mgmenu -->
+	<link rel="stylesheet" href="/static/js/mgmenu/menu.css"/>
+	<script src="/static/js/mgmenu/menu.js" type="text/javascript"></script>
+	<!-- jq nicescroll -->
+	<script src="/static/js/jquery.nicescroll.js" type="text/javascript"></script>
+	<!-- jq jclock -->
+	<script src="/static/js/jquery.jclock.js" type="text/javascript"></script>
+</head>
+<body>
+	<div id="mg_left">
+		<div id="mg_title_line">
+			<!-- <span class="logo"><img src="/static/img/logo.png"/></span> -->
+			<span class="title">
+				<tf>梦往专属世界</tf>
+				<ts>v1.0</ts>
+			</span>
+		</div>
+		<ul class="mg_menu">
+			<li><a href="javascript:void(0);">我的文章</a></li>
+			<li><a href="javascript:void(0);">我的作品</a></li>
+			<li><a href="javascript:void(0);">关于　我</a></li>
+			<li><a href="javascript:void(0);">我的文章</a></li>
+			<li><a href="javascript:void(0);">我的作品</a></li>
+			<li><a href="javascript:void(0);">关于　我</a></li>
+			<li><a href="javascript:void(0);">我的文章</a></li>
+			<li><a href="javascript:void(0);">我的作品</a></li>
+			<li><a href="javascript:void(0);">关于　我</a></li>
+		</ul>
+		<div id="mg_left_bottom">
+			<div class="mg_time"></div>
+		</div>
+	</div>
+	<div id="mg_main">主页面
+		<div style="height:1200px;width:2200px;"></div>
+	</div>
+
+<script>
+	$(function(){
+		//初始化mglayout
+		$().mgLayout({
+			'width' : 150
+			//,'bgcolor : '#9BE89B'
+			//,'hide' : false
+		}).mgMenu();
+		$('.mg_menu,#mg_main').niceScroll({ 
+		    cursorcolor: "#ccc",//光标颜色 
+		    cursoropacitymax: 1, //scrollabar“可见”状态），范围从1到0 
+		    touchbehavior: false, //使光标拖动滚动像在台式电脑触摸设备 
+		    cursorwidth: "5px", //像素光标的宽度 
+		    cursorborder: "0", //游标边框css定义 
+		    cursorborderradius: "5px",//以像素为光标边界半径 
+		    autohidemode: true //是否隐藏滚动条 
+		});
+		$(".mg_time").jclock({
+			withDate:true, 
+			utc:true
+		});
+	});
+</script>
+</body>
+</html>
